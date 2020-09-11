@@ -1,0 +1,36 @@
+<%- include('../partials/header')%>
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">URL Shortener</h1>
+        <p class="text-right text-muted">A Web project by Sai Arjun</p>
+        <a href="/url/new" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Shrink your URL!</a>
+    </div>
+    <!-- URL Dashboard -->
+    <div>Dashboard for per day per month</div>
+
+    <div class="table-responsive-md">
+        <table class="table">
+            <caption>List of all URL Shortened</caption>
+            <thead>
+                <tr>
+                    <th scope="col">S.No</th>
+                    <th scope="col">Original URL</th>
+                    <th scope="col">Shortened URL</th>
+                    <th scope="col">Clicked</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- For loop iterate in DB for records -->
+                <% urlData.forEach((url, index) => { %>
+                    <tr>
+                        <th scope="row"><%= index + 1 %></th>
+                        <td><a href="http://<%= url.originalUrl %>"><%= url.originalUrl %></a></td>
+                        <td><a href="<%= url.shortenedUrl %>"><%= url.shortenedUrl %></td>
+                        <td><%= url.clicked %></td>
+                    </tr>
+                <% })  %>
+            </tbody>
+        </table>
+    </div>
+</div>
+<%- include('../partials/footer')%>

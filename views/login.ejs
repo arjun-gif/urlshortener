@@ -1,0 +1,24 @@
+<%- include('./partials/header')%>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <form class="form-page" action="/user/login", method="POST">
+                <h1 class="text-center h3 mb-3 font-weight-normal">Login</h1>
+                <div class="form-group">
+                    <label for="username" class="sr-only">Email</label>
+                    <input class="form-control first-field" id="username" type="email" name="username" placeholder="Email" required>
+                    <label for="password" class="sr-only">Password</label>
+                    <input class="form-control last-field" id="password" type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-md btn-outline-primary btn-block" type="submit" value="Login">
+                </div>
+                <div class="d-flex justify-content-between">
+                    <span><a href="/">Go Back</a></span>
+                    <span><a href="/reset/forgot/">Forgot Password</a></span>
+                </div>
+            </form>
+        </div>
+    </div> 
+</div>
+<%- include('./partials/footer')%>

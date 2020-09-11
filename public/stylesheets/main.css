@@ -1,0 +1,73 @@
+.delete-form {
+    display: inline;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    margin-top: 24px;
+}
+
+body {
+    margin: 40px 0;  
+    bottom: footer height;
+    padding: 25px;
+    height: 100%;
+}
+
+#index-cards .card-img-top {
+    height: 180px;
+}
+
+.form-page {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-page label {
+    margin-top: 0.5rem;
+}
+
+.form-page .checkbox {
+    font-weight: 400;
+}
+
+.form-page .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.form-page .form-control:focus {
+    z-index: 2;
+}
+
+.form-page .first-field {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-page .middle-field {
+    margin-bottom: -1px;
+    border-radius: 0;
+}
+
+.form-page .last-field {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#url-footer {
+    background-color: #f5f5f5;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+}

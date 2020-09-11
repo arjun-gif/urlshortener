@@ -1,0 +1,19 @@
+<%- include('../partials/header')%>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <form class="form-page" action="/url/new", method="POST">
+                <h1 class="text-center h3 mb-3 font-weight-normal">URL Shortener</h1>
+                <div class="form-group">
+                    <label for="originalUrl" class="sr-only">Original Url</label>
+                    <input class="form-control" id="originalUrl" type="text" name="originalUrl" placeholder="Original Url" required>
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-md btn-outline-primary btn-block" type="submit" value="Create Short Url">
+                </div>
+                <div><a href="/">Go Back</a></div>
+            </form>
+        </div>
+    </div> 
+</div>
+<%- include('../partials/footer')%>
